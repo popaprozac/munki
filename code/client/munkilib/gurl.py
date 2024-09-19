@@ -719,7 +719,7 @@ class Gurl(NSObject):
                 self.log('Could not find matching identity')
                 if completionHandler:
                     completionHandler(
-                        NSURLSessionAuthChallengeCancelAuthenticationChallenge,
+                        NSURLSessionAuthChallengePerformDefaultHandling,
                         None
                     )
                 else:
