@@ -718,6 +718,7 @@ class Gurl(NSObject):
             else:
                 self.log('Could not find matching identity')
                 if completionHandler:
+                    self.log('Allowing OS to handle authentication request')
                     completionHandler(
                         NSURLSessionAuthChallengePerformDefaultHandling,
                         None
